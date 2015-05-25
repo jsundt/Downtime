@@ -1,0 +1,35 @@
+
+
+
+/* --------------------------------------- *\
+  #downtime logo
+\* --------------------------------------- */
+
+.logo {
+  font-weight: 800;
+  text-align: center;
+  margin: 40vh 0 0;
+  line-height: 0.9em;
+  font-size: 68px;
+  opacity: 0;
+  transform: translate3d(0, 50px, 0);
+
+  span {
+    color: $primary-colour;
+    letter-spacing: -2px;
+  }
+
+  &.drawing {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+
+    transition: 0.5s opacity 0.5s $timing, 0.5s transform 0.2s $timing;
+  }
+}
+
+.strapline {
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+}
