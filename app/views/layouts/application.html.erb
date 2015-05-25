@@ -17,6 +17,14 @@
 </head>
 <body>
 
+  <section>
+    <nav>
+      <%= link_to root_path, class: 'watermark' do %>
+        /<span>downtime</span>
+      <% end %>
+    </nav>
+  </section>
+
   <%= yield %>
 
   <%= render 'shared/scripts' %>

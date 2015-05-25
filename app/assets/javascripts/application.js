@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require typed
+//= require jqClock.min
 //= require_tree .

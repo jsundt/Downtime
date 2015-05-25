@@ -5,10 +5,59 @@
   #downtime logo
 \* --------------------------------------- */
 
+.watermark {
+  color: $primary-colour;
+  display: block;
+  font-size: 36px;
+  font-weight: 800;
+  text-decoration: none;
+  position: fixed;
+  top: 20px;
+  left: 40px;
+  letter-spacing: -2px;
+  opacity: 0;
+  z-index: 5;
+
+  span {
+    color: $black;
+    letter-spacing: 0;
+    opacity: 0;
+    transform: translate3d(-20px, 0 ,0);
+
+    transition: opacity 0.25s $timing, transform 0.5s $timing;
+  }
+
+  &:hover {
+    color: $primary-colour;
+
+    span {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+
+      transition: opacity 0.5s $timing, transform 0.25s $timing; 
+    }
+  }
+
+  &.drawing {
+    opacity: 1;
+    transition: 0.5s opacity 7s $timing; 
+  }
+}
+
+
+
+.loading {
+  position: absolute;
+  width: 80%;
+  margin-left: 50%;
+  left: -40%;
+  box-sizing: border-box;
+}
+
 .logo {
   font-weight: 800;
   text-align: center;
-  margin: 40vh 0 0;
+  margin: 36vh 0 0;
   line-height: 0.9em;
   font-size: 68px;
   opacity: 0;

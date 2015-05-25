@@ -1,0 +1,26 @@
+
+
+
+/* --------------------------------------- *\
+  #Downtime animations
+\* --------------------------------------- */
+.loading {
+  animation: load 0.5s $timing 7s forwards;
+}
+
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@keyframes load{
+  0% { 
+    opacity: 1; 
+    transform: translate3d(0,0,0); 
+  }
+  100% { 
+    opacity: 0; 
+    transform: translate3d(0, -100px, 0);
+  }
+}

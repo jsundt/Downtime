@@ -17,12 +17,15 @@
 @import "base/config"; //Use variables for all colours
 @import "base/mixins"; 
 @import "base/type"; //Base type hierachy, all other type changes to classes
+@import "base/animation";
 
 @import "pages/layout";
+@import "pages/test";
 
 // Import reusable modules
 @import "modules/logo";
 @import "modules/typed";
+@import "modules/camerafeed";
 
 // Specific project & page styles
 

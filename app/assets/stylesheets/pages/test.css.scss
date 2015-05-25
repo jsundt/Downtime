@@ -1,0 +1,28 @@
+
+
+
+/* --------------------------------------- *\
+  #Test page
+\* --------------------------------------- */
+
+.content {
+  padding: 5px;
+  position: relative;
+  width: 80%;
+  height: 80vh;
+  margin: 10vh auto 0;
+  background-color: $off-white;
+  opacity: 0;
+  transform: translate3d(0,50px,0);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  &.drawing {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+
+    transition: 0.5s opacity 7s $timing, 0.5s transform 7s $timing;
+  }
+}
